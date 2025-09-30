@@ -1,0 +1,22 @@
+{
+  "name": "Avraham Shaked - DevOps Engineer Portfolio",
+  "short_name": "A. Shaked Portfolio",
+  "description": "DevOps Engineer portfolio showcasing expertise in big data, cloud infrastructure, and system optimization",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007bff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

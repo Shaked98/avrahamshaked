@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avraham Shaked - DevOps Engineer with 3+ years at Amdocs GenAI. Expert in big data, cloud infrastructure, and system optimization. AWS certified professional.">
+    <meta name="author" content="Avraham Shaked">
+    <meta name="theme-color" content="#007bff">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://avrahamshaked.com/">
+    <meta property="og:title" content="Avraham Shaked - DevOps Engineer">
+    <meta property="og:description" content="DevOps Engineer specializing in big data, cloud infrastructure, and system optimization. 3+ years experience at Amdocs GenAI.">
+    <meta property="og:image" content="https://avrahamshaked.com/self-image.jpg">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Avraham Shaked - DevOps Engineer">
+    <meta name="twitter:description" content="DevOps Engineer specializing in big data, cloud infrastructure, and system optimization.">
+    <meta name="twitter:image" content="https://avrahamshaked.com/self-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.svg">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
     <title>DevOps Engineer | Avraham Shaked</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#hero" class="skip-link">Skip to main content</a>
+
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <div class="logo">Avraham Shaked</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -22,7 +52,7 @@
 
     <section id="hero">
         <div class="hero-content">
-            <img src="self-image.jpg" alt="Avraham Shaked" class="profile-photo">
+            <img src="self-image.jpg" alt="Avraham Shaked - DevOps Engineer" class="profile-photo" loading="lazy">
             <h1>Hi, I'm <span class="highlight">Avraham Shaked</span></h1>
             <h2>DevOps Engineer at Amdocs GenAI and Data Division | 3+ Years Experience</h2>
             <p>Managing production environments, optimizing system performance, and delivering reliable big data solutions</p>
@@ -40,6 +70,7 @@
                 <div class="about-text">
                     <p>I'm a DevOps Engineer with 3+ years of experience at Amdocs GenAI and Data Division, with a proven track record of managing production, SIT, and QA environments. I thrive on collaboration within a team and am continuously seeking opportunities to expand my skills and stay up-to-date with the latest industry trends.</p>
                     <p>My expertise includes big data technologies, system optimization, and infrastructure management. I've led critical projects including production disaster recovery, cluster upgrades, and performance optimizations that achieved up to 97% latency reduction.</p>
+                    <p>Beyond hands-on infrastructure work, I mentor new team members and provide technical consulting on performance optimizations and architectural decisions for cross-functional big data projects.</p>
                     <p><strong>Certifications:</strong> AWS Solutions Architect Associate, AWS Cloud Practitioner | <strong>Education:</strong> Graduate of AWS re/Start program</p>
                 </div>
             </div>
@@ -73,12 +104,17 @@
                 <div class="skill-card">
                     <i class="fas fa-database"></i>
                     <h3>Databases</h3>
-                    <p>MySQL, HBase Multi-MFS</p>
+                    <p>MySQL, HBase, TSDB, Hive</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-terminal"></i>
                     <h3>Scripting & Automation</h3>
                     <p>Bash, Python, Java Tomcat Runtime</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Mentorship & Consulting</h3>
+                    <p>Training New Engineers, Technical Consulting, Knowledge Transfer</p>
                 </div>
             </div>
         </div>
@@ -134,9 +170,9 @@
             <div class="contact-content">
                 <p>I'm always open to discussing new projects, opportunities, or partnerships. Based in Rishon LeZion, Israel.</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/avraham-shaked" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:avrams1998@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:+972523851059" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="https://linkedin.com/in/avraham-shaked" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="mailto:avrams1998@gmail.com" title="Email" aria-label="Send me an email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+                    <a href="tel:+972523851059" title="Phone" aria-label="Call me"><i class="fas fa-phone" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
@@ -145,5 +181,33 @@
     <footer>
         <p>&copy; 2025 Avraham Shaked. All rights reserved.</p>
     </footer>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Person",
+      "name": "Avraham Shaked",
+      "url": "https://avrahamshaked.com",
+      "image": "https://avrahamshaked.com/self-image.jpg",
+      "jobTitle": "DevOps Engineer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Amdocs GenAI and Data Division"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rishon LeZion",
+        "addressCountry": "IL"
+      },
+      "alumniOf": "AWS re/Start program",
+      "email": "avrams1998@gmail.com",
+      "telephone": "+972523851059",
+      "sameAs": [
+        "https://linkedin.com/in/avraham-shaked"
+      ],
+      "knowsAbout": ["DevOps", "Big Data", "HBase", "MapR", "Hive", "AWS", "Linux", "System Performance", "Grafana", "Python", "Bash"]
+    }
+    </script>
 </body>
 </html>
