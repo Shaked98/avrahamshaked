@@ -316,8 +316,107 @@ section {
     color: var(--text-light);
 }
 
-/* Projects Section */
-#projects {
+/* Portfolio Section */
+#portfolio {
+    background: var(--card-bg);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #e5e7eb;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.portfolio-image {
+    background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.portfolio-content {
+    padding: 2rem;
+}
+
+.portfolio-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.portfolio-content p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-badge {
+    background: var(--bg-light);
+    color: var(--text-color);
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
+}
+
+.portfolio-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.portfolio-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.portfolio-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+
+.portfolio-btn i {
+    font-size: 1.1rem;
+}
+
+/* Achievements Section */
+#achievements {
     background: var(--bg-light);
 }
 
@@ -530,7 +629,8 @@ footer {
     }
 
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .portfolio-grid {
         grid-template-columns: 1fr;
     }
 
