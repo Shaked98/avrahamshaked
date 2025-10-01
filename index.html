@@ -41,6 +41,11 @@
     <header>
         <nav aria-label="Main navigation">
             <div class="logo">Avraham Shaked</div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -68,10 +73,16 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm a DevOps Engineer with 3+ years of experience at Amdocs GenAI and Data Division, with a proven track record of managing production, SIT, and QA environments. I thrive on collaboration within a team and am continuously seeking opportunities to expand my skills and stay up-to-date with the latest industry trends.</p>
+                    <p>I'm a DevOps Engineer with 3+ years of experience at Amdocs GenAI and Data Division, with a proven track record of managing production, SIT, and QA environments.</p>
+
+                    <p>I thrive on collaboration within a team and am continuously seeking opportunities to expand my skills and stay up-to-date with the latest industry trends.</p>
+
                     <p>My expertise includes big data technologies, system optimization, and infrastructure management. I've led critical projects including production disaster recovery, cluster upgrades, and performance optimizations that achieved up to 97% latency reduction.</p>
+
                     <p>Beyond hands-on infrastructure work, I mentor new team members and provide technical consulting on performance optimizations and architectural decisions for cross-functional big data projects.</p>
-                    <p><strong>Certifications:</strong> AWS Solutions Architect Associate, AWS Cloud Practitioner | <strong>Education:</strong> Graduate of AWS re/Start program</p>
+
+                    <p><strong>Certifications:</strong> AWS Solutions Architect Associate, AWS Cloud Practitioner</p>
+                    <p><strong>Education:</strong> Graduate of AWS re/Start program</p>
                 </div>
             </div>
         </div>
@@ -125,8 +136,12 @@
             <h2 class="section-title">Key Achievements</h2>
             <div class="projects-grid">
                 <div class="project-card highlight-card">
-                    <h3><i class="fas fa-rocket"></i> 97% Performance Improvement</h3>
-                    <p>Engineered HBase Multi-MFS architecture with strategic container balancing, slashing database latency from 215ms to 6ms. This breakthrough optimization enabled the organization to meet critical SLA commitments and directly improved customer satisfaction across multiple product lines.</p>
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>97% Performance Improvement</h3>
+                    <p>Engineered HBase Multi-MFS architecture with strategic container balancing, reducing database latency by over 95%.</p>
+                    <p>This breakthrough optimization enabled the organization to meet critical SLA commitments and directly improved customer satisfaction across multiple product lines.</p>
                     <div class="project-tags">
                         <span class="tag">HBase</span>
                         <span class="tag">Performance Engineering</span>
@@ -134,17 +149,25 @@
                     </div>
                 </div>
                 <div class="project-card highlight-card">
-                    <h3><i class="fas fa-server"></i> Enterprise-Scale Infrastructure Upgrade</h3>
-                    <p>Led enterprise-scale infrastructure upgrade across multiple production servers during critical maintenance windows, achieving zero data loss. Developed automated backup solutions and comprehensive documentation that became standards within the division for future deployments.</p>
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Enterprise-Scale Infrastructure Upgrade</h3>
+                    <p>Led enterprise-scale infrastructure upgrade across multiple production servers during critical maintenance windows, achieving zero data loss.</p>
+                    <p>Developed automated backup solutions and comprehensive documentation that became standards within the division for future deployments.</p>
                     <div class="project-tags">
                         <span class="tag">MapR</span>
                         <span class="tag">Project Leadership</span>
-                        <span class="tag">Zero Downtime</span>
+                        <span class="tag">High Availability</span>
                     </div>
                 </div>
                 <div class="project-card highlight-card">
-                    <h3><i class="fas fa-fire-extinguisher"></i> Production Incident Resolution</h3>
-                    <p>Led resolution of multiple Severity 1 production incidents, collaborating directly with HPE engineers to diagnose and fix critical "too many containers" issue affecting system stability. Successfully closed 18+ high-priority production cases, ensuring business continuity and maintaining 99.9% uptime.</p>
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-fire-extinguisher"></i>
+                    </div>
+                    <h3>Production Incident Resolution</h3>
+                    <p>Led resolution of multiple Severity 1 production incidents, collaborating directly with 3rd party vendors to diagnose and fix critical system stability issues.</p>
+                    <p>Successfully closed high-priority production cases, ensuring business continuity and maintaining 99.9% uptime.</p>
                     <div class="project-tags">
                         <span class="tag">Incident Management</span>
                         <span class="tag">Vendor Collaboration</span>
@@ -152,12 +175,42 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <h3><i class="fas fa-tachometer-alt"></i> KVM Virtualization Strategy</h3>
-                    <p>Architected KVM-based virtualization solution for CDRP workloads, achieving 3× performance improvement over previous configuration. This strategic infrastructure decision ensured contract SLA compliance and reduced hardware costs.</p>
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>KVM Virtualization Strategy</h3>
+                    <p>Architected KVM-based virtualization solution for critical production workloads, achieving significant performance improvement over previous configuration.</p>
+                    <p>This strategic infrastructure decision ensured contract SLA compliance and reduced hardware costs.</p>
                     <div class="project-tags">
                         <span class="tag">Virtualization</span>
                         <span class="tag">Cost Optimization</span>
                         <span class="tag">Architecture</span>
+                    </div>
+                </div>
+                <div class="project-card highlight-card">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Production Disaster Recovery</h3>
+                    <p>Designed and implemented comprehensive disaster recovery strategy for production big data environments, ensuring business continuity and data protection.</p>
+                    <p>Developed automated backup solutions and recovery procedures that minimized downtime risk and established resilience standards across the division.</p>
+                    <div class="project-tags">
+                        <span class="tag">Disaster Recovery</span>
+                        <span class="tag">Business Continuity</span>
+                        <span class="tag">Risk Management</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image-placeholder">
+                        <i class="fas fa-expand-arrows-alt"></i>
+                    </div>
+                    <h3>Capacity Planning & System Scaling</h3>
+                    <p>Led strategic capacity planning initiatives and system right-sizing efforts to optimize resource utilization and support future growth requirements.</p>
+                    <p>Implemented data-driven scaling strategies that balanced performance needs with cost efficiency, enabling seamless expansion to meet evolving business demands.</p>
+                    <div class="project-tags">
+                        <span class="tag">Capacity Planning</span>
+                        <span class="tag">Scalability</span>
+                        <span class="tag">Resource Optimization</span>
                     </div>
                 </div>
             </div>
@@ -170,9 +223,27 @@
             <div class="contact-content">
                 <p>I'm always open to discussing new projects, opportunities, or partnerships. Based in Rishon LeZion, Israel.</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/avraham-shaked" target="_blank" rel="noopener noreferrer" title="LinkedIn" aria-label="Visit my LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="mailto:avrams1998@gmail.com" title="Email" aria-label="Send me an email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
-                    <a href="tel:+972523851059" title="Phone" aria-label="Call me"><i class="fas fa-phone" aria-hidden="true"></i></a>
+                    <a href="https://linkedin.com/in/avraham-shaked" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn" aria-label="Visit my LinkedIn profile">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/shaked98" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub" aria-label="Visit my GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:avrams1998@gmail.com" class="social-link" title="Email" aria-label="Send me an email">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="tel:+972523851059" class="social-link" title="Phone" aria-label="Call me">
+                        <i class="fas fa-phone" aria-hidden="true"></i>
+                        <span>Phone</span>
+                    </a>
+                </div>
+                <div class="contact-buttons">
+                    <a href="Avraham Shaked CV.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
                 </div>
             </div>
         </div>
@@ -181,6 +252,37 @@
     <footer>
         <p>&copy; 2025 Avraham Shaked. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            }
+        });
+    </script>
 
     <!-- Structured Data for SEO -->
     <script type="application/ld+json">
